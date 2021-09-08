@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  fill: #f5e80a;
+  margin: 1.2rem 2.2rem;
+}
+
+.icon:hover {
+  fill: #fff100;
+}
+
+.longLine {
+  border-left: 2px solid #f5e80a;
+  height: 100px;
+}
+
+.shortLine {
+  border-left: 2px solid #f5e80a;
+  height: 25px;
+}

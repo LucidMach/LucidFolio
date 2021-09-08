@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  font-family: "Vampiro One", cursive;
+  font-size: 6rem;
+  color: #fff100;
+}
+.motto {
+  color: #ebdf13;
+  letter-spacing: 1.2rem;
+}
