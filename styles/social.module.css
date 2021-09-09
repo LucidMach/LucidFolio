@@ -12,6 +12,13 @@
   margin: 1.2rem 2.2rem;
 }
 
+@media screen and (max-width: 600px) {
+  .icon {
+    width: 3rem;
+    height: 3.25rem;
+  }
+}
+
 .icon:hover {
   fill: #fff100;
 }

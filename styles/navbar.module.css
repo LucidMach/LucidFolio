@@ -9,3 +9,8 @@
   position: sticky;
   top: 0;
 }
+
+.logo {
+  width: 3.125rem;
+  height: 3.75rem;
+}
