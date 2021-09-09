@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BTN from "./BTN";
 import navbar from "../styles/navbar.module.css";
 
 const NavBar = () => {
@@ -7,10 +8,11 @@ const NavBar = () => {
       <div className={navbar.logo}>
         <Image src="/LoGo.png" alt="HexMach" width="50" height="60" />
       </div>
-      <button className={navbar.btn}>
-        {" "}
-        <a href="https://dev.to/Lucidmach/">blog</a>
-      </button>
+      <BTN className={navbar.btn}>
+        <a href="https://dev.to/Lucidmach/" target="_">
+          blog
+        </a>
+      </BTN>
     </div>
   );
 };

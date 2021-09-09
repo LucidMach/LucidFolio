@@ -1,0 +1,24 @@
+.btn {
+  color: #f5e80a;
+  font-size: 1.1rem;
+  background-color: #1a1a1a00;
+  border: 2px solid #f5e80a;
+  padding: 0.3rem 1rem;
+  margin: 0.6rem;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  color: #1a1a1a;
+  background-color: #f5e80a;
+  border: 2px solid #fff100;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #f5e80a;
+}
+
+.btn:hover a {
+  color: #1a1a1a;
+}
