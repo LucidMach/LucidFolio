@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log("in interval");
+      // console.log("in interval");
       if (window) {
         setH(window.innerHeight - 100);
         clearInterval(interval);
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className={home.container} style={{ height: h }}>
       <h2 className={home.title}>LucidMach</h2>
-      <h3 className={home.motto}>Dream It... Build It !</h3>
+      <h3 className={home.motto}>Dream It... Build It</h3>
       <div className={home.links}>
         <BTN>2D</BTN>
         <BTN>3D</BTN>

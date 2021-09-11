@@ -8,7 +8,7 @@ const NavBar = () => {
       <div className={navbar.logo}>
         <Image src="/LoGo.png" alt="HexMach" width="50" height="60" />
       </div>
-      <BTN className={navbar.btn}>
+      <BTN>
         <a href="https://dev.to/Lucidmach/" target="_">
           blog
         </a>

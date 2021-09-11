@@ -9,14 +9,7 @@
 
 .icon {
   fill: #f5e80a;
-  margin: 1.2rem 2.2rem;
-}
-
-@media screen and (max-width: 600px) {
-  .icon {
-    width: 3rem;
-    height: 3.25rem;
-  }
+  margin: 1.2rem 2.2rem 0;
 }
 
 .icon:hover {
@@ -29,6 +22,20 @@
 }
 
 .shortLine {
+  margin-top: 1.2rem;
   border-left: 2px solid #f5e80a;
   height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .icon {
+    width: 3rem;
+    height: 3.25rem;
+  }
+  .longLine {
+    height: 70px;
+  }
+  .shortLine {
+    height: 15px;
+  }
 }

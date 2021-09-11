@@ -22,3 +22,13 @@
 .btn:hover a {
   color: #1a1a1a;
 }
+
+@media screen and (max-width: 600px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .btn a {
+    font-size: 1.5rem;
+  }
+}
