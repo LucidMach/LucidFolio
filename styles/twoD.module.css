@@ -1,0 +1,70 @@
+.container {
+  width: calc(100vw - 14rem);
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  top: 100px;
+  left: 7rem;
+  margin: 3rem 1rem;
+}
+
+.card {
+  background: #1a1a1a;
+}
+
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  flex-direction: row;
+  position: absolute;
+  bottom: calc(100% - 12rem);
+  margin: 1rem;
+}
+
+.image {
+  filter: brightness(45%);
+}
+.image:hover {
+  filter: brightness(70%);
+}
+
+.date {
+  position: absolute;
+  bottom: calc(100% - 2rem);
+  margin: 0 1rem;
+  color: #d6cc22;
+}
+
+.title {
+  position: absolute;
+  bottom: calc(100% - 10rem);
+  margin: 1rem;
+  font-family: "Vampiro One", cursive;
+  font-size: 6rem;
+  color: #fff100;
+}
+
+.role {
+  color: #fff100;
+  padding: 0.3rem 1rem;
+  border-radius: 2rem;
+  border: 2px solid #fff100;
+  margin: 0.5rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 5rem;
+  margin: 1rem 2rem;
+}
+.desc {
+  color: #d6cc22;
+  padding: 0 1rem;
+}
+
+.stack {
+  margin: 0.8rem;
+}

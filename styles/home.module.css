@@ -1,8 +1,17 @@
 .container {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    bottom: 3rem;
+  }
 }
 .title {
   font-family: "Vampiro One", cursive;

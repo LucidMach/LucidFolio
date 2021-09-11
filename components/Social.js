@@ -1,5 +1,6 @@
 import social from "../styles/social.module.css";
 import sociallinks from "../models/sociallinks";
+import icons from "../models/icons";
 
 const Social = () => {
   return (
@@ -8,7 +9,7 @@ const Social = () => {
       {sociallinks.map((link) => {
         return (
           <a href={link.href} key={link.index} target="_">
-            {link.icon}
+            {icons[link.icon]}
           </a>
         );
       })}

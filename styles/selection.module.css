@@ -1,0 +1,27 @@
+.container {
+  width: 60%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.activeBtn {
+  background: #fff100;
+  color: #1a1a1a;
+  border: 2px solid #f5e80a;
+  padding: 0.3rem 1rem;
+  margin: 0.6rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.btn {
+  background: #1a1a1a;
+  color: #fff100;
+  border: 2px solid #f5e80a;
+  padding: 0.3rem 1rem;
+  margin: 0.6rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
