@@ -27,13 +27,14 @@ const TwoD = () => {
           <div className={twoD.stack}>
             {projects2d[index].stack.map((element) => {
               return (
-                <Image
-                  key={element}
-                  src={`/assets/stack/${element}.png`}
-                  alt={element}
-                  width="36px"
-                  height="36px"
-                />
+                <div className={twoD.tool} key={element}>
+                  <Image
+                    src={`/assets/stack/${element}.png`}
+                    alt={element}
+                    width="36px"
+                    height="36px"
+                  />
+                </div>
               );
             })}
           </div>
