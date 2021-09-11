@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BTN from "../components/BTN";
 import home from "../styles/home.module.css";
 import { useEffect, useState } from "react";
@@ -20,8 +21,12 @@ const Home = () => {
       <h2 className={home.title}>LucidMach</h2>
       <h3 className={home.motto}>Dream It... Build It</h3>
       <div className={home.links}>
-        <BTN>2D</BTN>
-        <BTN>3D</BTN>
+        <BTN>
+          <Link href="/2d">2D</Link>
+        </BTN>
+        <BTN>
+          <Link href="/3d">3D</Link>
+        </BTN>
       </div>
     </div>
   );

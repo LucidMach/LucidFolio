@@ -9,6 +9,7 @@
 }
 
 .btn:hover {
+  cursor: pointer;
   color: #1a1a1a;
   background-color: #f5e80a;
   border: 2px solid #fff100;
