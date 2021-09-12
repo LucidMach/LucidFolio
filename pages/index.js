@@ -21,23 +21,20 @@ const Home = () => {
   return (
     <>
       <NavBar>
-        <BTN>
-          <a href="https://dev.to/Lucidmach/" target="_">
-            blog
-          </a>
-        </BTN>
+        <div className={home.links}>
+          <BTN>
+            <Link href="/work">work</Link>
+          </BTN>
+          <BTN>
+            <a href="https://dev.to/Lucidmach/" target="_">
+              blog
+            </a>
+          </BTN>
+        </div>
       </NavBar>
       <div className={home.container} style={{ height: h }}>
         <h2 className={home.title}>LucidMach</h2>
         <h3 className={home.motto}>Dream It... Build It</h3>
-        <div className={home.links}>
-          <BTN>
-            <Link href="/2d">2D</Link>
-          </BTN>
-          <BTN>
-            <Link href="/3d">3D</Link>
-          </BTN>
-        </div>
       </div>
       <Social />
     </>

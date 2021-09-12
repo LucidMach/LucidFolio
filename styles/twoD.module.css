@@ -1,12 +1,23 @@
+.control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  fill: #fff100;
+  z-index: 1;
+  cursor: pointer;
+}
+.disabled {
+  cursor: not-allowed;
+}
 .container {
   width: calc(100vw - 14rem);
   flex-direction: column;
   justify-content: center;
   display: flex;
-  position: absolute;
-  top: 5rem;
-  left: 7rem;
-  margin: 3rem 1rem;
+  margin: 7rem 1rem;
 }
 
 .card {
@@ -25,8 +36,7 @@
   width: 75%;
   flex-direction: row;
   position: absolute;
-  bottom: calc(100% - 12rem);
-  margin: 1rem;
+  margin: 8rem 0;
 }
 
 .image {
@@ -38,14 +48,12 @@
 
 .date {
   position: absolute;
-  bottom: calc(100% - 2rem);
   margin: 0 1rem;
   color: #d6cc22;
 }
 
 .title {
   position: absolute;
-  bottom: calc(100% - 10rem);
   margin: 1rem;
   font-family: "Vampiro One", cursive;
   font-size: 6rem;
@@ -63,9 +71,10 @@
 .links {
   display: flex;
   flex-direction: row;
+  left: 0;
   position: absolute;
-  bottom: 5rem;
-  margin: 1rem 2rem;
+  margin: 0 9rem;
+  justify-content: flex-end;
 }
 .desc {
   color: #d6cc22;
@@ -75,7 +84,7 @@
 .stack {
   margin: 0 1.8rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .tool {
@@ -83,10 +92,12 @@
 }
 
 @media screen and (max-width: 600px) {
+  .image {
+    filter: brightness(100%);
+  }
   .container {
     width: 100%;
     position: unset;
-    /* left: 0; */
     padding: 0 1rem;
     margin: 125px 0;
     background: #1a1a1a;
@@ -99,14 +110,18 @@
     position: unset;
   }
   .roles {
-    position: unset;
-  }
-  .links {
-    position: fixed;
-    bottom: 1rem;
-    justify-content: end;
+    position: relative;
+    margin: 1rem;
   }
   .desc {
     font-size: medium;
+    position: relative;
+  }
+  .stack {
+    position: relative;
+  }
+  .links {
+    position: relative;
+    margin: 1rem;
   }
 }
