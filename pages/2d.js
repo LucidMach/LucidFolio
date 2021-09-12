@@ -4,12 +4,22 @@ import twoD from "../styles/twoD.module.css";
 import NavBar from "../components/NavBar";
 import Social from "../components/Social";
 import icons from "../models/icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const TwoD = () => {
   const [index, setIndex] = useState(0);
+  const [w, setW] = useState("100vw");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (window) {
+        setW(window.innerWidth);
+        clearInterval(interval);
+      }
+    }, 200);
+  }, [w]);
   return (
     <>
       <NavBar>
@@ -68,7 +78,7 @@ const TwoD = () => {
           </div>
         </div>
       </div>
-      {window.innerWidth > 600 ? <Social /> : null}
+      {w > 600 ? <Social /> : null}
     </>
   );
 };
