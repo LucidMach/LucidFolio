@@ -20,7 +20,10 @@ const Home = () => {
 
   return (
     <>
-      <NavBar>
+      <NavBar />
+      <div className={home.container} style={{ height: h }}>
+        <h2 className={home.title}>LucidMach</h2>
+        <h3 className={home.motto}>Dream It... Build It</h3>
         <div className={home.links}>
           <BTN>
             <Link href="/work">work</Link>
@@ -31,10 +34,6 @@ const Home = () => {
             </a>
           </BTN>
         </div>
-      </NavBar>
-      <div className={home.container} style={{ height: h }}>
-        <h2 className={home.title}>LucidMach</h2>
-        <h3 className={home.motto}>Dream It... Build It</h3>
       </div>
       <Social />
     </>

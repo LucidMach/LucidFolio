@@ -117,11 +117,11 @@ const projects = [
     links: [
       {
         icon: "download",
-        link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/lightcycle.png",
+        link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/lightcycle-blue.png",
       },
     ],
     desc: "LightCycle AKA The Tron Bike ",
-    pic: "/assets/lightcycle.png",
+    pic: "/assets/lightcycle-blue.png",
     stack: ["figma"],
   },
   {
@@ -137,6 +137,21 @@ const projects = [
     ],
     desc: "If Kenny and Levi fought on the Same Side",
     pic: "/assets/kennyxlevi.png",
+    stack: ["figma"],
+  },
+  {
+    title: "LucidMach",
+    date: "Sept,2021",
+    roles: ["Logo Designer"],
+    type: "logos",
+    links: [
+      {
+        icon: "download",
+        link: "https://github.com/LucidMach/portfolio/tree/master/public/LoGo.png",
+      },
+    ],
+    desc: "The Logo on this Website",
+    pic: "/LoGo.png",
     stack: ["figma"],
   },
   {
@@ -168,6 +183,51 @@ const projects = [
     desc: "A Book Sharing based Dating App",
     pic: "/assets/libvion.png",
     stack: ["figma"],
+  },
+  {
+    title: "HeadPhone Holder",
+    date: "Aug,2021",
+    roles: ["Designer", "3D Modeller"],
+    type: "3D",
+    links: [
+      {
+        icon: "thingiverse",
+        link: "https://www.thingiverse.com/thing:4932042",
+      },
+    ],
+    desc: "A Headphon Holder that clips on to a cupboard/closet",
+    pic: "/assets/headphoneholder.png",
+    stack: ["fusion360"],
+  },
+  {
+    title: "Essential Tool Holder",
+    date: "Aug,2021",
+    roles: ["Designer", "3D Modeller"],
+    type: "3D",
+    links: [
+      {
+        icon: "thingiverse",
+        link: "https://www.thingiverse.com/thing:4935274",
+      },
+    ],
+    desc: "An Ultra Minimalistic Tool Holder for Ender 3 Series 3D Printers",
+    pic: "/assets/toolholder.png",
+    stack: ["fusion360"],
+  },
+  {
+    title: "De-WebCam",
+    date: "Aug,2021",
+    roles: ["Designer", "3D Modeller"],
+    type: "3D",
+    links: [
+      {
+        icon: "thingiverse",
+        link: "https://www.thingiverse.com/thing:4944231",
+      },
+    ],
+    desc: "An Ultra Minimalistic Physical Cover to Block Web Cam Access for PRIVACY REASONS",
+    pic: "/assets/dewebcam.png",
+    stack: ["fusion360"],
   },
 ];
 

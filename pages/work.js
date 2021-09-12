@@ -12,6 +12,8 @@ const TwoD = () => {
   const [active, setActive] = useState("UI");
   const [index, setIndex] = useState(0);
   const [w, setW] = useState("100vw");
+
+  const projectTypes = ["UI", "wallpapers", "logos", "3D"];
   let projects2d;
 
   useEffect(() => {
@@ -27,6 +29,23 @@ const TwoD = () => {
     return project.type === active;
   });
 
+  useEffect(() => {
+    if (document) {
+      document.addEventListener("keydown", (e) => {
+        if (e.keyCode === 37) decreaseIndex();
+        if (e.keyCode === 39) increaseIndex();
+      });
+    }
+  });
+
+  const increaseIndex = () => {
+    setIndex(index < projects2d.length - 1 ? index + 1 : index);
+  };
+
+  const decreaseIndex = () => {
+    setIndex(index > 0 ? index - 1 : index);
+  };
+
   return (
     <>
       <NavBar>
@@ -34,15 +53,11 @@ const TwoD = () => {
           active={active}
           setActive={setActive}
           setIndex={setIndex}
-          options={["UI", "wallpapers", "logos"]}
+          options={projectTypes}
         />
       </NavBar>
       <div className={twoD.control}>
-        <div
-          onClick={() => {
-            setIndex(index > 0 ? index - 1 : index);
-          }}
-        >
+        <div onClick={decreaseIndex}>
           <svg
             className={index > 0 ? twoD.arrow : twoD.disabled}
             xmlns="http://www.w3.org/2000/svg"
@@ -108,11 +123,7 @@ const TwoD = () => {
             </div>
           </div>
         </div>
-        <div
-          onClick={() => {
-            setIndex(index < projects2d.length - 1 ? index + 1 : index);
-          }}
-        >
+        <div onClick={increaseIndex}>
           <svg
             className={
               index < projects2d.length - 1 ? twoD.arrow : twoD.disabled
