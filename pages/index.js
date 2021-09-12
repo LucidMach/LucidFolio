@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BTN from "../components/BTN";
+import Social from "../components/Social";
 import NavBar from "../components/NavBar";
 import home from "../styles/home.module.css";
 import { useEffect, useState } from "react";
@@ -38,6 +39,7 @@ const Home = () => {
           </BTN>
         </div>
       </div>
+      <Social />
     </>
   );
 };

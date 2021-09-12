@@ -1,14 +1,21 @@
 .container {
   width: calc(100vw - 14rem);
+  flex-direction: column;
   justify-content: center;
   display: flex;
   position: absolute;
-  top: 100px;
+  top: 5rem;
   left: 7rem;
   margin: 3rem 1rem;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  padding: 1rem;
   background: #1a1a1a;
 }
 
@@ -50,14 +57,14 @@
   padding: 0.3rem 1rem;
   border-radius: 2rem;
   border: 2px solid #fff100;
-  margin: 0.5rem;
+  margin: 0 0.5rem;
 }
 
 .links {
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: 3rem;
+  bottom: 5rem;
   margin: 1rem 2rem;
 }
 .desc {
@@ -73,4 +80,33 @@
 
 .tool {
   margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    position: unset;
+    /* left: 0; */
+    padding: 0 1rem;
+    margin: 125px 0;
+    background: #1a1a1a;
+  }
+  .title {
+    position: unset;
+    font-size: 42px;
+  }
+  .date {
+    position: unset;
+  }
+  .roles {
+    position: unset;
+  }
+  .links {
+    position: fixed;
+    bottom: 1rem;
+    justify-content: end;
+  }
+  .desc {
+    font-size: medium;
+  }
 }

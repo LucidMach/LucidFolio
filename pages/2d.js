@@ -2,6 +2,7 @@ import Selection from "../components/Selection";
 import projects2d from "../models/2dprojects";
 import twoD from "../styles/twoD.module.css";
 import NavBar from "../components/NavBar";
+import Social from "../components/Social";
 import icons from "../models/icons";
 import { useState } from "react";
 import Image from "next/image";
@@ -23,21 +24,6 @@ const TwoD = () => {
             width="850"
             height="425"
           />
-          <p className={twoD.desc}>{projects2d[index].desc}</p>
-          <div className={twoD.stack}>
-            {projects2d[index].stack.map((element) => {
-              return (
-                <div className={twoD.tool} key={element}>
-                  <Image
-                    src={`/assets/stack/${element}.png`}
-                    alt={element}
-                    width="36px"
-                    height="36px"
-                  />
-                </div>
-              );
-            })}
-          </div>
           <h1 className={twoD.title}>{projects2d[index].title}</h1>
           <h4 className={twoD.date}>{projects2d[index].date}</h4>
           <div className={twoD.roles}>
@@ -64,7 +50,25 @@ const TwoD = () => {
             })}
           </div>
         </div>
+        <div className={twoD.details}>
+          <p className={twoD.desc}>{projects2d[index].desc}</p>
+          <div className={twoD.stack}>
+            {projects2d[index].stack.map((element) => {
+              return (
+                <div className={twoD.tool} key={element}>
+                  <Image
+                    src={`/assets/stack/${element}.png`}
+                    alt={element}
+                    width="36px"
+                    height="36px"
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
+      {window.innerWidth > 600 ? <Social /> : null}
     </>
   );
 };
