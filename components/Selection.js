@@ -1,5 +1,4 @@
 import selection from "../styles/selection.module.css";
-import { useState } from "react";
 
 const Sekection = ({ options, active, setActive, setIndex }) => {
   return (
@@ -10,7 +9,6 @@ const Sekection = ({ options, active, setActive, setIndex }) => {
             className={option === active ? selection.activeBtn : selection.btn}
             onClick={() => {
               setActive(option);
-              setIndex(0);
             }}
             key={i}
           >
