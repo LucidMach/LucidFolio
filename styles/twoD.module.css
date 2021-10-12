@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   display: flex;
-  margin: 7rem 1rem;
+  margin: 10rem 1rem;
 }
 
 .card {
@@ -87,6 +87,12 @@
   margin: 0 0.5rem;
 }
 
+@media screen and (max-width: 900px) {
+  .work {
+    height: 70vh;
+    padding: 0 2rem;
+  }
+}
 @media screen and (max-width: 600px) {
   .image {
     filter: brightness(100%);

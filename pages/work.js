@@ -3,6 +3,7 @@ import twoD from "../styles/twoD.module.css";
 import projects from "../models/projects";
 import NavBar from "../components/NavBar";
 import Social from "../components/Social";
+import BTN from "../components/BTN";
 import icons from "../models/icons";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,12 +33,13 @@ const TwoD = () => {
   return (
     <div className={twoD.content}>
       <NavBar>
-        <Selection
-          active={active}
-          setActive={setActive}
-          options={projectTypes}
-        />
+        <BTN>
+          <a href="https://dev.to/Lucidmach/" target="_">
+            blog
+          </a>
+        </BTN>
       </NavBar>
+      <Selection active={active} setActive={setActive} options={projectTypes} />
       {projects2d.map((project) => {
         return (
           <div className={twoD.work} key={project.title}>
