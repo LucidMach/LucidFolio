@@ -6,6 +6,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   z-index: 10;
   position: fixed;
   top: 5.5rem;
@@ -13,7 +14,9 @@
   padding: 0 2.8rem;
   box-shadow: 2px 2px #1a1a1a;
 }
-
+.icon {
+  margin: 0.725rem;
+}
 .options {
   display: flex;
   flex-direction: row;
@@ -41,10 +44,31 @@
 
 @media screen and (max-width: 600px) {
   .container {
-    padding: 0 2.5rem;
+    position: fixed;
+    top: auto;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 2.5rem;
+    background: #fff100;
+    box-shadow: none;
+    width: auto;
+    align-items: center;
   }
-  .btn,
+  .options {
+    display: none;
+    flex-direction: row;
+  }
+  .btn {
+    background-color: #fff100;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
+    font-size: 12px;
+  }
   .activeBtn {
+    background-color: #1a1a1a;
+    border: 2px solid #fff100;
+    color: #fff100;
     font-size: 12px;
   }
 }

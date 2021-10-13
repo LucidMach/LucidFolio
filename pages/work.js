@@ -39,7 +39,12 @@ const TwoD = () => {
           </a>
         </BTN>
       </NavBar>
-      <Selection active={active} setActive={setActive} options={projectTypes} />
+      <Selection
+        active={active}
+        setActive={setActive}
+        options={projectTypes}
+        w={w}
+      />
       {projects2d.map((project) => {
         return (
           <div className={twoD.work} key={project.title}>

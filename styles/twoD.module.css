@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 900px) {
   .work {
-    height: 70vh;
+    height: 80vh;
     padding: 0 2rem;
   }
 }
@@ -120,6 +120,7 @@
   }
   .stack {
     position: relative;
+    justify-content: start;
   }
   .links {
     position: relative;

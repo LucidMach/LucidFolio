@@ -1,17 +1,30 @@
+import { useRef } from "react";
 import selection from "../styles/selection.module.css";
-import Image from "next/image";
 
-const Selection = ({ options, active, setActive, setIndex }) => {
+const Selection = ({ options, active, setActive, w }) => {
+  // console.log(w < 600 ? "#1a1a1a" : "#EBDF13");
+  const optionRef = useRef();
+  const clickHandler = () => {
+    if (w < 600) {
+      if (optionRef.current.style.display === "")
+        optionRef.current.style.display = "flex";
+      else optionRef.current.style.display = "";
+    }
+  };
   return (
-    <div className={selection.container}>
-      <Image
+    <div className={selection.container} onClick={() => clickHandler()}>
+      <svg
         className={selection.icon}
-        src="/Filter.svg"
-        alt="logo"
-        width="24px"
-        height="24px"
-      />
-      <div className={selection.options}>
+        width="24"
+        height="24"
+        viewBox="0 0 45 45"
+        fill={w < 600 ? "#1a1a1a" : "#EBDF13"}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M1.86981 0H43.0055L26.1773 28.3012V45L18.6981 39.375V28.3012L1.86981 0Z" />
+      </svg>
+
+      <div className={selection.options} ref={optionRef}>
         {options.map((option, i) => {
           return (
             <div
