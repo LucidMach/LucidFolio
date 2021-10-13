@@ -40,7 +40,7 @@ const Selection = ({ options, active, setActive, w }) => {
               onClick={() => {
                 // setActive(option);
                 // console.log(window.location.search);
-                window.location.search = `?project=${option}`;
+                window.location.search = `?mode=${option}`;
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               key={i}
