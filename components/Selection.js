@@ -1,3 +1,4 @@
+import Router from "next/router";
 import { useEffect, useRef } from "react";
 import selection from "../styles/selection.module.css";
 
@@ -6,7 +7,7 @@ const Selection = ({ options, active, setActive, w }) => {
   const optionRef = useRef();
   useEffect(() => {
     const URLprojectMode = window.location.search.split("=")[1];
-    URLprojectMode === "" ? setActive("UI") : setActive(URLprojectMode);
+    setActive(URLprojectMode);
   }, []);
 
   const clickHandler = () => {
@@ -38,9 +39,13 @@ const Selection = ({ options, active, setActive, w }) => {
                 option === active ? selection.activeBtn : selection.btn
               }
               onClick={() => {
-                // setActive(option);
+                setActive(option);
                 // console.log(window.location.search);
-                window.location.search = `?mode=${option}`;
+                // window.location.search = `?mode=${option}`;
+                Router.push({
+                  pathname: "/work",
+                  query: { mode: option },
+                });
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               key={i}
