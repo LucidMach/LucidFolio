@@ -6,7 +6,7 @@ const Selection = ({ options, active, setActive, w }) => {
   const optionRef = useRef();
   useEffect(() => {
     const URLprojectMode = window.location.search.split("=")[1];
-    setActive(URLprojectMode);
+    URLprojectMode === "" ? setActive("UI") : setActive(URLprojectMode);
   }, []);
 
   const clickHandler = () => {
