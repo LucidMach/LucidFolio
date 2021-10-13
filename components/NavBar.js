@@ -6,7 +6,7 @@ const NavBar = ({ children }) => {
   return (
     <div className={navbar.container}>
       <div className={navbar.logo}>
-        <Link href="/">
+        <Link href="/" passHref={true}>
           <Image src="/LoGo.png" alt="HexMach" width="50" height="60" />
         </Link>
       </div>
