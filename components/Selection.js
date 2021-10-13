@@ -4,6 +4,7 @@ import selection from "../styles/selection.module.css";
 const Selection = ({ options, active, setActive, w }) => {
   // console.log(w < 600 ? "#1a1a1a" : "#EBDF13");
   const optionRef = useRef();
+
   const clickHandler = () => {
     if (w < 600) {
       if (optionRef.current.style.display === "")
@@ -11,6 +12,7 @@ const Selection = ({ options, active, setActive, w }) => {
       else optionRef.current.style.display = "";
     }
   };
+
   return (
     <div className={selection.container} onClick={() => clickHandler()}>
       <svg
@@ -33,6 +35,7 @@ const Selection = ({ options, active, setActive, w }) => {
               }
               onClick={() => {
                 setActive(option);
+                window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               key={i}
             >

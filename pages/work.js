@@ -52,7 +52,7 @@ const TwoD = () => {
               <div className={twoD.card}>
                 <Image
                   className={twoD.image}
-                  objectFit="cover"
+                  objectFit={project.type === "logos" ? "contain" : "cover"}
                   src={project.pic}
                   alt={project.title}
                   width="850"
@@ -93,8 +93,8 @@ const TwoD = () => {
                         <Image
                           src={`/assets/stack/${element}.png`}
                           alt={element}
-                          width="36px"
-                          height="36px"
+                          width={w > 600 ? "36px" : "24px"}
+                          height={w > 600 ? "36px" : "24px"}
                         />
                       </div>
                     );
