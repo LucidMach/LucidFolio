@@ -1,5 +1,5 @@
 import Selection from "../components/Selection";
-import twoD from "../styles/twoD.module.css";
+import work from "../styles/work.module.css";
 import projects from "../models/projects";
 import NavBar from "../components/NavBar";
 import Social from "../components/Social";
@@ -9,7 +9,7 @@ import Image from "next/image";
 import FileSaver from "file-saver";
 import { useEffect, useRef, useState } from "react";
 
-const TwoD = () => {
+const Work = () => {
   const [active, setActive] = useState("UI");
   const [w, setW] = useState(600);
 
@@ -26,14 +26,14 @@ const TwoD = () => {
   }, [w]);
 
   const projectTypes = ["UI", "wallpapers", "logos", "3D"];
-  let projects2d;
+  let projectList;
 
-  projects2d = projects.filter((project) => {
+  projectList = projects.filter((project) => {
     return project.type === active;
   });
 
   return (
-    <div className={twoD.content}>
+    <div className={work.content}>
       <NavBar>
         <BTN>
           <a href="https://dev.to/Lucidmach/" target="_">
@@ -47,13 +47,13 @@ const TwoD = () => {
         options={projectTypes}
         w={w}
       />
-      {projects2d.map((project) => {
+      {projectList.map((project) => {
         return (
-          <div className={twoD.work} key={project.title}>
-            <div className={twoD.container}>
-              <div className={twoD.card}>
+          <div className={work.work} key={project.title}>
+            <div className={work.container}>
+              <div className={work.card}>
                 <Image
-                  className={twoD.image}
+                  className={work.image}
                   objectFit={project.type === "logos" ? "contain" : "cover"}
                   src={project.pic}
                   alt={project.title}
@@ -72,26 +72,26 @@ const TwoD = () => {
                     }
                   }}
                 />
-                <h1 className={twoD.title}>{project.title}</h1>
-                <h4 className={twoD.date}>{project.date}</h4>
-                <div className={twoD.roles}>
+                <h1 className={work.title}>{project.title}</h1>
+                <h4 className={work.date}>{project.date}</h4>
+                <div className={work.roles}>
                   {project.roles.map((role, i) => {
                     return (
-                      <div className={twoD.role} key={i}>
+                      <div className={work.role} key={i}>
                         {role}
                       </div>
                     );
                   })}
                 </div>
               </div>
-              <div className={twoD.details}>
-                <p className={twoD.desc}>{project.desc}</p>
-                <div className={twoD.links}>
+              <div className={work.details}>
+                <p className={work.desc}>{project.desc}</p>
+                <div className={work.links}>
                   {project.links.map((link) => {
                     if (link.icon !== "download")
                       return (
                         <a
-                          className={twoD.link}
+                          className={work.link}
                           key={link.icon}
                           href={link.link}
                           target="_"
@@ -102,7 +102,7 @@ const TwoD = () => {
                     else {
                       return (
                         <div
-                          className={twoD.link}
+                          className={work.link}
                           key={link.icon}
                           onClick={() => {
                             FileSaver.saveAs(
@@ -117,10 +117,10 @@ const TwoD = () => {
                     }
                   })}
                 </div>
-                <div className={twoD.stack}>
+                <div className={work.stack}>
                   {project.stack.map((element) => {
                     return (
-                      <div className={twoD.tool} key={element}>
+                      <div className={work.tool} key={element}>
                         <Image
                           src={`/assets/stack/${element}.png`}
                           alt={element}
@@ -141,4 +141,4 @@ const TwoD = () => {
   );
 };
 
-export default TwoD;
+export default Work;
