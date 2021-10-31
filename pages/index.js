@@ -20,19 +20,25 @@ const Home = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBar>
+        <BTN>
+          <Link href={{ pathname: "/projects", query: { type: "UI" } }}>
+            projects
+          </Link>
+        </BTN>
+      </NavBar>
       <div className={home.container} style={{ height: h }}>
         <h2 className={home.title}>LucidMach</h2>
         <h3 className={home.motto}>Dream It... Build It</h3>
         <div className={home.links}>
           <BTN>
-            <Link href={{ pathname: "/work", query: { type: "UI" } }}>
-              work
+            <Link href={{ pathname: "/projects", query: { type: "UI" } }}>
+              projects
             </Link>
           </BTN>
           <BTN>
             <a href="https://dev.to/Lucidmach/" target="_">
-              blog
+              dev blog
             </a>
           </BTN>
         </div>

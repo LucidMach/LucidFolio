@@ -44,7 +44,7 @@ const Selection = ({ options, active, setActive, w }) => {
                 // console.log(window.location.search);
                 // window.location.search = `?mode=${option}`;
                 Router.push({
-                  pathname: "/work",
+                  pathname: "/projects",
                   query: { type: option },
                 });
                 window.scrollTo({ top: 0, behavior: "smooth" });
