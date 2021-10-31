@@ -6,12 +6,14 @@ import Social from "../components/Social";
 import BTN from "../components/BTN";
 import icons from "../models/icons";
 import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import FileSaver from "file-saver";
+import { useEffect, useRef, useState } from "react";
 
 const TwoD = () => {
   const [active, setActive] = useState("UI");
   const [w, setW] = useState(600);
+
+  const linkRef = useRef();
 
   // For Conditional Rendering SocialMedia Links on Work Page
   useEffect(() => {
@@ -57,6 +59,18 @@ const TwoD = () => {
                   alt={project.title}
                   width="850"
                   height="425"
+                  onClick={() => {
+                    if (
+                      project.links[project.links.length - 1].icon !==
+                      "download"
+                    ) {
+                      window
+                        .open(project.links[project.links.length - 1].link, "_")
+                        .focus();
+                    } else {
+                      FileSaver.saveAs(project.pic, `${project.title}.png`);
+                    }
+                  }}
                 />
                 <h1 className={twoD.title}>{project.title}</h1>
                 <h4 className={twoD.date}>{project.date}</h4>
@@ -74,16 +88,33 @@ const TwoD = () => {
                 <p className={twoD.desc}>{project.desc}</p>
                 <div className={twoD.links}>
                   {project.links.map((link) => {
-                    return (
-                      <Link
-                        className={twoD.link}
-                        key={link.icon}
-                        href={link.link}
-                        target="_"
-                      >
-                        {icons[link.icon]}
-                      </Link>
-                    );
+                    if (link.icon !== "download")
+                      return (
+                        <a
+                          className={twoD.link}
+                          key={link.icon}
+                          href={link.link}
+                          target="_"
+                        >
+                          {icons[link.icon]}
+                        </a>
+                      );
+                    else {
+                      return (
+                        <div
+                          className={twoD.link}
+                          key={link.icon}
+                          onClick={() => {
+                            FileSaver.saveAs(
+                              project.pic,
+                              `${project.title}.png`
+                            );
+                          }}
+                        >
+                          {icons[link.icon]}
+                        </div>
+                      );
+                    }
                   })}
                 </div>
                 <div className={twoD.stack}>
@@ -93,8 +124,8 @@ const TwoD = () => {
                         <Image
                           src={`/assets/stack/${element}.png`}
                           alt={element}
-                          width={w > 600 ? "36px" : "24px"}
-                          height={w > 600 ? "36px" : "24px"}
+                          width={w > 600 ? "36px" : "30px"}
+                          height={w > 600 ? "36px" : "30px"}
                         />
                       </div>
                     );

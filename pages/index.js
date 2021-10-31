@@ -26,7 +26,7 @@ const Home = () => {
         <h3 className={home.motto}>Dream It... Build It</h3>
         <div className={home.links}>
           <BTN>
-            <Link href={{ pathname: "/work", query: { mode: "UI" } }}>
+            <Link href={{ pathname: "/work", query: { type: "UI" } }}>
               work
             </Link>
           </BTN>

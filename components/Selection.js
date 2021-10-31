@@ -5,6 +5,7 @@ import selection from "../styles/selection.module.css";
 const Selection = ({ options, active, setActive, w }) => {
   // console.log(w < 600 ? "#1a1a1a" : "#EBDF13");
   const optionRef = useRef();
+
   useEffect(() => {
     const URLprojectMode = window.location.search.split("=")[1];
     setActive(URLprojectMode);
@@ -44,7 +45,7 @@ const Selection = ({ options, active, setActive, w }) => {
                 // window.location.search = `?mode=${option}`;
                 Router.push({
                   pathname: "/work",
-                  query: { mode: option },
+                  query: { type: option },
                 });
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}

@@ -1,7 +1,13 @@
+.work:first-child {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  margin: 5vh 0 0 0;
+}
 .work {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 70vh;
 }
 .content {
   display: flex;
@@ -84,13 +90,14 @@
 }
 
 .tool {
-  margin: 0 0.5rem;
+  /* margin: 0 0.5rem; */
 }
 
 @media screen and (max-width: 900px) {
   .work {
-    height: 80vh;
+    height: 72.5vh;
     padding: 0 2rem;
+    margin: 0 0 2.5vh 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -99,16 +106,16 @@
   }
   .container {
     width: 100%;
-    position: unset;
+    position: initial;
     margin: 125px 0;
     background: #1a1a1a;
   }
   .title {
-    position: unset;
+    position: initial;
     font-size: 42px;
   }
   .date {
-    position: unset;
+    position: inherit;
   }
   .roles {
     position: relative;
@@ -116,14 +123,17 @@
   }
   .desc {
     font-size: medium;
-    position: relative;
-  }
-  .stack {
-    position: relative;
-    justify-content: start;
+    position: initial;
   }
   .links {
     position: relative;
     margin: 1rem;
   }
+  /* .stack:before {
+    content: "made with";
+    color: #d6cc22;
+    padding: 0.5rem 0;
+    position: relative;
+    bottom: 1rem;
+  } */
 }
