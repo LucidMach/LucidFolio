@@ -15,6 +15,7 @@
   box-shadow: 2px 2px #1a1a1a;
 }
 .icon {
+  display: flex;
   margin: 0.725rem;
 }
 .options {
@@ -56,19 +57,19 @@
     align-items: center;
   }
   .options {
-    display: none;
+    display: flex;
     flex-direction: row;
   }
   .btn {
     background-color: #fff100;
     border: 2px solid #1a1a1a;
     color: #1a1a1a;
-    font-size: 12px;
+    font-size: 1.5rem;
   }
   .activeBtn {
     background-color: #1a1a1a;
-    border: 2px solid #fff100;
+    border: 2px solid #2a2a2a;
     color: #fff100;
-    font-size: 12px;
+    font-size: 1.5rem;
   }
 }
