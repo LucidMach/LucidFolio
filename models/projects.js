@@ -68,11 +68,15 @@ const projects = [
     title: "L",
     date: "Jan,2021",
     roles: ["Graphic Designer"],
-    type: "wallpapers",
+    type: "NFTs",
     links: [
       {
         icon: "download",
         link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/L.png",
+      },
+      {
+        icon: "opensea",
+        link: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/74581509028102701182483494008541574736928693971239183494526073912182538502244",
       },
     ],
     desc: "Lew Lawiet from DeathNote",
@@ -83,11 +87,15 @@ const projects = [
     title: "Itachi Konoha",
     date: "March,2021",
     roles: ["Graphic Designer"],
-    type: "wallpapers",
+    type: "NFTs",
     links: [
       {
         icon: "download",
         link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/itachi.png",
+      },
+      {
+        icon: "opensea",
+        link: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/74581509028102701182483494008541574736928693971239183494526073911083026874468",
       },
     ],
     desc: "Finnaly a Wallpaper showing Itachi's Love for Konoha ",
@@ -98,14 +106,18 @@ const projects = [
     title: "Zenitsu",
     date: "July,2021",
     roles: ["Graphic Designer"],
-    type: "wallpapers",
+    type: "NFTs",
     links: [
       {
         icon: "download",
         link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/zenitsu.png",
       },
+      {
+        icon: "opensea",
+        link: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/74581509028102701182483494008541574736928693971239183494526073914381561757796",
+      },
     ],
-    desc: "Zenitsu without his Fear ",
+    desc: "Zenitsu without his Fear",
     pic: "/assets/zenitsu.png",
     stack: ["figma"],
   },
@@ -113,11 +125,15 @@ const projects = [
     title: "LightCycle",
     date: "Dec,2020",
     roles: ["Graphic Designer"],
-    type: "wallpapers",
+    type: "NFTs",
     links: [
       {
         icon: "download",
         link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/lightcycle-blue.png",
+      },
+      {
+        icon: "opensea",
+        link: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/74581509028102701182483494008541574736928693971239183494526073915481073385572",
       },
     ],
     desc: "LightCycle AKA The Tron Bike ",
@@ -128,11 +144,15 @@ const projects = [
     title: "Kenny X Levi",
     date: "Jan,2021",
     roles: ["Graphic Designer"],
-    type: "wallpapers",
+    type: "NFTs",
     links: [
       {
         icon: "download",
         link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/kennyxlevi.png",
+      },
+      {
+        icon: "opensea",
+        link: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/74581509028102701182483494008541574736928693971239183494526073913282050130020",
       },
     ],
     desc: "If Kenny and Levi fought on the Same Side",
@@ -143,7 +163,7 @@ const projects = [
     title: "LucidMach",
     date: "Sept,2021",
     roles: ["Logo Designer"],
-    type: "logos",
+    type: "logo",
     links: [
       {
         icon: "download",
@@ -158,7 +178,7 @@ const projects = [
     title: "Fayura",
     date: "Nov,2020",
     roles: ["Logo Designer"],
-    type: "logos",
+    type: "logo",
     links: [
       {
         icon: "download",
@@ -173,7 +193,7 @@ const projects = [
     title: "LibVion",
     date: "Aug,2021",
     roles: ["Logo Designer"],
-    type: "logos",
+    type: "logo",
     links: [
       {
         icon: "download",
@@ -188,7 +208,7 @@ const projects = [
     title: "HeadPhone Holder",
     date: "Aug,2021",
     roles: ["Designer", "3D Modeller"],
-    type: "3D",
+    type: "things",
     links: [
       {
         icon: "thingiverse",
@@ -203,7 +223,7 @@ const projects = [
     title: "Essential Tool Holder",
     date: "Aug,2021",
     roles: ["Designer", "3D Modeller"],
-    type: "3D",
+    type: "things",
     links: [
       {
         icon: "thingiverse",
@@ -218,7 +238,7 @@ const projects = [
     title: "De-WebCam",
     date: "Aug,2021",
     roles: ["Designer", "3D Modeller"],
-    type: "3D",
+    type: "things",
     links: [
       {
         icon: "thingiverse",

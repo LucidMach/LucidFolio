@@ -25,7 +25,7 @@ const Work = () => {
     }, 200);
   }, [w]);
 
-  const projectTypes = ["UI", "wallpapers", "logos", "3D"];
+  const projectTypes = ["UI", "NFTs", "logo", "things"];
   let projectList;
 
   projectList = projects.filter((project) => {
@@ -54,7 +54,7 @@ const Work = () => {
               <div className={work.card}>
                 <Image
                   className={work.image}
-                  objectFit={project.type === "logos" ? "contain" : "cover"}
+                  objectFit={project.type === "logo" ? "contain" : "cover"}
                   src={project.pic}
                   alt={project.title}
                   width="850"
