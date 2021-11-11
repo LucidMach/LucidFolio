@@ -16,19 +16,19 @@ const Selection = ({ options, active, setActive, w }) => {
     setActive(URLprojectMode);
   }, []);
 
-  const clickHandler = () => {
-    if (w < 600) {
-      // console.log(optionRef.current.style.display);
-      if (optionRef.current.style.display === "")
-        return (optionRef.current.style.display = "none");
-      if (optionRef.current.style.display === "flex")
-        return (optionRef.current.style.display = "none");
-      else return (optionRef.current.style.display = "flex");
-    }
-  };
+  // const clickHandler = () => {
+  //   if (w < 600) {
+  //     // console.log(optionRef.current.style.display);
+  //     if (optionRef.current.style.display === "")
+  //       return (optionRef.current.style.display = "none");
+  //     if (optionRef.current.style.display === "flex")
+  //       return (optionRef.current.style.display = "none");
+  //     else return (optionRef.current.style.display = "flex");
+  //   }
+  // };
 
   return (
-    <div className={selection.container} onClick={() => clickHandler()}>
+    <div className={selection.container}>
       <svg
         className={selection.icon}
         width="24"

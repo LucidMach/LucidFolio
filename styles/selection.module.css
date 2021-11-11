@@ -48,8 +48,8 @@
     position: fixed;
     top: auto;
     bottom: 2.5rem;
-    right: 2.5rem;
     padding: 0.5rem;
+    justify-content: center;
     border-radius: 2.5rem;
     background: #fff100;
     box-shadow: none;
