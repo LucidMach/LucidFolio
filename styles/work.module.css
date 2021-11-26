@@ -1,13 +1,6 @@
-.work:first-child {
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  margin: 5vh 0 0 0;
-}
 .work {
   display: flex;
   flex-direction: column;
-  height: 90vh;
 }
 .content {
   display: flex;
@@ -19,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   display: flex;
-  margin: 10rem 1rem;
+  margin: 2rem 1rem;
 }
 
 .card {
@@ -90,21 +83,13 @@
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 900px) {
-  .work {
-    height: 72.5vh;
-    padding: 0 2rem;
-    margin: 0 0 2.5vh 0;
-  }
-}
 @media screen and (max-width: 600px) {
   .image {
     filter: brightness(100%);
   }
   .container {
-    width: 100%;
-    position: initial;
-    margin: 125px 0;
+    width: 90vw;
+    margin: 2rem;
     background: #1a1a1a;
   }
   .title {

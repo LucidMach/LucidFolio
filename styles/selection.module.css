@@ -8,8 +8,8 @@
   justify-content: space-between;
   align-items: center;
   z-index: 10;
-  position: fixed;
-  top: 5.5rem;
+  position: sticky;
+  top: 5.75rem;
   background: #2a2a2a;
   padding: 0 2.1rem;
   box-shadow: 2px 2px #1a1a1a;
