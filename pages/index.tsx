@@ -6,11 +6,10 @@ import home from "../styles/home.module.css";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  const [h, setH] = useState("82vh");
+  const [h, setH] = useState<number>();
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // console.log("in interval");
       if (window) {
         setH(window.innerHeight - 100);
         clearInterval(interval);

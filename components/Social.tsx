@@ -2,7 +2,7 @@ import social from "../styles/social.module.css";
 import sociallinks from "../models/sociallinks";
 import icons from "../models/icons";
 
-const Social = () => {
+const Social: React.FC = () => {
   return (
     <div className={social.container}>
       <div className={social.longLine}></div>

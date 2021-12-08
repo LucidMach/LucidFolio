@@ -2,7 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import navbar from "../styles/navbar.module.css";
 
-const NavBar = ({ children }) => {
+interface Props {
+  children: React.ReactNode;
+}
+
+const NavBar: React.FC<Props> = ({ children }) => {
   return (
     <div className={navbar.container}>
       <div className={navbar.logo}>

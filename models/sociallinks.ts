@@ -1,6 +1,10 @@
-import social from "../styles/social.module.css";
+interface SocialLinks {
+  index: number;
+  href: string;
+  icon: string;
+}
 
-const sociallinks = [
+const sociallinks: SocialLinks[] = [
   {
     index: 0,
     href: "https://twitter.com/LucidMach",

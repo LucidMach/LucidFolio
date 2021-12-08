@@ -1,4 +1,18 @@
-const projects = [
+interface Projects {
+  title: string;
+  date: string;
+  roles: string[];
+  type: string;
+  links: {
+    icon: string;
+    link: string;
+  }[];
+  desc: string;
+  pic: string;
+  stack: string[];
+}
+
+const projects: Projects[] = [
   {
     title: "VOIT",
     date: "June,2021",

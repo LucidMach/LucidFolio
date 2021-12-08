@@ -1,6 +1,10 @@
 import btn from "../styles/btn.module.css";
 
-const BTN = ({ children }) => {
+interface Props {
+  children: React.ReactNode;
+}
+
+const BTN: React.FC<Props> = ({ children }) => {
   return <div className={btn.btn}>{children}</div>;
 };
 
