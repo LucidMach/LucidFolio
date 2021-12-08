@@ -9,24 +9,24 @@
 }
 
 .icon {
-  fill: #f5e80a;
+  fill: var(--ac1);
   margin: 0.6rem;
   cursor: pointer;
 }
 
 .icon:hover {
-  fill: #fff100;
+  fill: var(--ac0);
 }
 
 .longLine {
   margin-bottom: 1.2rem;
-  border-left: 2px solid #f5e80a;
+  border-left: 2px solid var(--ac1);
   height: 100px;
 }
 
 .shortLine {
   margin-top: 1.2rem;
-  border-left: 2px solid #f5e80a;
+  border-left: 2px solid var(--ac1);
   height: 25px;
 }
 

@@ -38,7 +38,7 @@ const Home = () => {
           </BTN>
           <BTN>
             <a href="https://dev.to/Lucidmach/" target="_">
-              dev blog
+              lucid blog
             </a>
           </BTN>
         </div>

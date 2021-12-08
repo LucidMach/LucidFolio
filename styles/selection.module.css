@@ -10,9 +10,9 @@
   z-index: 10;
   position: sticky;
   top: 5.75rem;
-  background: #2a2a2a;
+  background: var(--bg1);
   padding: 0 2.1rem;
-  box-shadow: 2px 2px #1a1a1a;
+  box-shadow: 2px 2px var(--bg0);
 }
 .icon {
   display: flex;
@@ -25,9 +25,9 @@
 }
 
 .activeBtn {
-  background: #fff100;
-  color: #2a2a2a;
-  border: 2px solid #f5e80a;
+  background: var(--ac0);
+  color: var(--bg1);
+  border: 2px solid var(--ac1);
   padding: 0.3rem 1rem;
   margin: 0.6rem;
   border-radius: 2rem;
@@ -35,8 +35,8 @@
 }
 .btn {
   background: #1a1a1a00;
-  color: #fff100;
-  border: 2px solid #f5e80a;
+  color: var(--ac0);
+  border: 2px solid var(--ac1);
   padding: 0.3rem 1rem;
   margin: 0.6rem;
   border-radius: 2rem;
@@ -51,7 +51,7 @@
     padding: 0.5rem;
     justify-content: center;
     border-radius: 2.5rem;
-    background: #fff100;
+    background: var(--ac0);
     box-shadow: none;
     width: auto;
     align-items: center;
@@ -61,15 +61,15 @@
     flex-direction: row;
   }
   .btn {
-    background-color: #fff100;
-    border: 2px solid #1a1a1a;
-    color: #1a1a1a;
+    background-color: var(--ac0);
+    border: 2px solid var(--bg0);
+    color: var(--bg0);
     font-size: 1.5rem;
   }
   .activeBtn {
-    background-color: #1a1a1a;
-    border: 2px solid #2a2a2a;
-    color: #fff100;
+    background-color: var(--bg0);
+    border: 2px solid var(--bg1);
+    color: var(--ac0);
     font-size: 1.5rem;
   }
 }

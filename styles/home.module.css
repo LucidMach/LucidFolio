@@ -11,10 +11,10 @@
   font-family: "Vampiro One", cursive;
   font-size: 6rem;
   /* font-size: clamp(2rem, 10vw, 6rem); */
-  color: #fff100;
+  color: var(--ac0);
 }
 .motto {
-  color: #ebdf13;
+  color: var(--ac2);
   letter-spacing: 1.2rem;
   /* letter-spacing: clamp(0.6rem, 2vw, 1.2rem);
   font-size: clamp(0.6rem, 1vw, 2.4rem); */

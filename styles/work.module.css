@@ -22,7 +22,7 @@
 
 .details {
   padding: 1rem;
-  background: #1a1a1a;
+  background: var(--bg0);
 }
 
 .roles {
@@ -44,7 +44,7 @@
 .date {
   position: absolute;
   margin: 0 1rem;
-  color: #d6cc22;
+  color: var(--ac3);
 }
 
 .title {
@@ -52,14 +52,14 @@
   margin: 1rem;
   font-family: "Vampiro One", cursive;
   font-size: 6rem;
-  color: #fff100;
+  color: var(--ac0);
 }
 
 .role {
-  color: #fff100;
+  color: var(--ac0);
   padding: 0.3rem 1rem;
   border-radius: 2rem;
-  border: 2px solid #fff100;
+  border: 2px solid var(--ac0);
   margin: 0 0.5rem;
 }
 
@@ -73,7 +73,7 @@
   align-items: center;
 }
 .desc {
-  color: #d6cc22;
+  color: var(--ac3);
   padding: 0 1rem;
 }
 
@@ -90,7 +90,7 @@
   .container {
     width: 90vw;
     margin: 2rem;
-    background: #1a1a1a;
+    background: var(--bg0);
   }
   .title {
     position: initial;
@@ -113,7 +113,7 @@
   }
   /* .stack:before {
     content: "made with";
-    color: #d6cc22;
+    color: var(--ac3);
     padding: 0.5rem 0;
     position: relative;
     bottom: 1rem;
