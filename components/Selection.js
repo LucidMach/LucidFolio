@@ -3,29 +3,14 @@ import { useEffect, useRef } from "react";
 import selection from "../styles/selection.module.css";
 
 const Selection = ({ options, active, setActive, w }) => {
-  // console.log(w < 600 ? "#1a1a1a" : "#EBDF13");
   const optionRef = useRef();
 
   useEffect(() => {
     const URLprojectMode = window.location.search.split("=")[1]
       ? window.location.search.split("=")[1]
       : "UI";
-    // console.log(URLprojectMode);
-    // URLprojectMode ? "UI" : URLprojectMode;
-    // console.log(URLprojectMode);
     setActive(URLprojectMode);
   }, []);
-
-  // const clickHandler = () => {
-  //   if (w < 600) {
-  //     // console.log(optionRef.current.style.display);
-  //     if (optionRef.current.style.display === "")
-  //       return (optionRef.current.style.display = "none");
-  //     if (optionRef.current.style.display === "flex")
-  //       return (optionRef.current.style.display = "none");
-  //     else return (optionRef.current.style.display = "flex");
-  //   }
-  // };
 
   return (
     <div className={selection.container}>

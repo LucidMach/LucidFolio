@@ -18,10 +18,10 @@
   --ac3: #d6cc22;
   --er: #f22424;
 }
-
 body {
   background-color: var(--bg1);
 }
+
 ::-webkit-scrollbar {
   width: 2.5px;
   height: 2px;

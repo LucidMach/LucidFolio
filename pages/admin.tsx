@@ -1,8 +1,8 @@
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import password from "../../styles/password.module.css";
+import password from "../styles/password.module.css";
 import { ChangeEvent, useState } from "react";
 import Image from "next/dist/client/image";
-import { auth } from "../../firebase";
+import { auth } from "../firebase";
 import router from "next/router";
 
 const PassWord: React.FC = () => {
@@ -17,7 +17,9 @@ const PassWord: React.FC = () => {
   if (error) {
     return (
       <div className={password.container}>
-        <p style={{ color: "var(--er" }}>Error: {error.message}</p>
+        <div className={password.error} onClick={() => location.reload()}>
+          Error: {error.message}
+        </div>
       </div>
     );
   }
@@ -29,7 +31,7 @@ const PassWord: React.FC = () => {
     );
   }
   if (user) {
-    router.push("/admin/dashboard");
+    router.push("/dashboard");
   }
 
   return (
