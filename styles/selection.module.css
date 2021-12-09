@@ -59,6 +59,8 @@
   .options {
     display: flex;
     flex-direction: row;
+    width: 80%;
+    overflow: scroll;
   }
   .btn {
     background-color: var(--ac0);

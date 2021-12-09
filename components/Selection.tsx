@@ -1,8 +1,15 @@
 import Router from "next/router";
-import { useEffect, useRef } from "react";
+import { SetStateAction, useEffect, useRef } from "react";
 import selection from "../styles/selection.module.css";
 
-const Selection = ({ options, active, setActive, w }) => {
+interface Props {
+  options: string[];
+  active: string;
+  setActive: React.Dispatch<SetStateAction<string>>;
+  w: number;
+}
+
+const Selection: React.FC<Props> = ({ options, active, setActive, w }) => {
   const optionRef = useRef();
 
   useEffect(() => {
@@ -10,6 +17,7 @@ const Selection = ({ options, active, setActive, w }) => {
       ? window.location.search.split("=")[1]
       : "UI";
     setActive(URLprojectMode);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -19,7 +27,7 @@ const Selection = ({ options, active, setActive, w }) => {
         width="24"
         height="24"
         viewBox="0 0 45 45"
-        fill={w < 600 ? "#1a1a1a" : "#EBDF13"}
+        fill={w < 600 ? "var(--bg0)" : "var(--ac2)"}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path d="M1.86981 0H43.0055L26.1773 28.3012V45L18.6981 39.375V28.3012L1.86981 0Z" />
@@ -34,8 +42,6 @@ const Selection = ({ options, active, setActive, w }) => {
               }
               onClick={() => {
                 setActive(option);
-                // console.log(window.location.search);
-                // window.location.search = `?mode=${option}`;
                 Router.push({
                   pathname: "/projects",
                   query: { type: option },

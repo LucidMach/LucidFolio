@@ -7,13 +7,11 @@ import BTN from "../components/BTN";
 import icons from "../models/icons";
 import Image from "next/image";
 import FileSaver from "file-saver";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Work = () => {
   const [active, setActive] = useState("UI");
   const [w, setW] = useState(600);
-
-  const linkRef = useRef();
 
   // For Conditional Rendering SocialMedia Links on Work Page
   useEffect(() => {
@@ -25,10 +23,14 @@ const Work = () => {
     }, 200);
   }, [w]);
 
-  const projectTypes = ["UI", "NFTs", "logo", "things"];
-  let projectList;
+  let projectTypes: string[] = [];
+  projects.forEach((project) => {
+    if (!projectTypes.includes(project.type)) {
+      projectTypes.push(project.type);
+    }
+  });
 
-  projectList = projects.filter((project) => {
+  const projectList = projects.filter((project) => {
     return project.type === active;
   });
 

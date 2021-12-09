@@ -82,7 +82,7 @@ const projects: Projects[] = [
     title: "L",
     date: "Jan,2021",
     roles: ["Graphic Designer"],
-    type: "NFTs",
+    type: "art",
     links: [
       {
         icon: "download",
@@ -101,7 +101,7 @@ const projects: Projects[] = [
     title: "Itachi Konoha",
     date: "March,2021",
     roles: ["Graphic Designer"],
-    type: "NFTs",
+    type: "art",
     links: [
       {
         icon: "download",
@@ -120,7 +120,7 @@ const projects: Projects[] = [
     title: "Zenitsu",
     date: "July,2021",
     roles: ["Graphic Designer"],
-    type: "NFTs",
+    type: "art",
     links: [
       {
         icon: "download",
@@ -139,7 +139,7 @@ const projects: Projects[] = [
     title: "LightCycle",
     date: "Dec,2020",
     roles: ["Graphic Designer"],
-    type: "NFTs",
+    type: "art",
     links: [
       {
         icon: "download",
@@ -158,7 +158,7 @@ const projects: Projects[] = [
     title: "Kenny X Levi",
     date: "Jan,2021",
     roles: ["Graphic Designer"],
-    type: "NFTs",
+    type: "art",
     links: [
       {
         icon: "download",
