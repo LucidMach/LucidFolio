@@ -76,7 +76,7 @@ const projects: Projects[] = [
     ],
     desc: "A tool that enables designers to get wireframe sizes of initial device for better RWD",
     pic: "/assets/viewport-sizes.png",
-    stack: ["nextJS", "typescript"],
+    stack: ["nextjs", "typescript"],
   },
   {
     title: "L",
