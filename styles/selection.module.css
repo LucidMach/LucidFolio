@@ -59,7 +59,8 @@
   .options {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 80vw;
+    min-width: 250px;
     overflow: scroll;
   }
   .btn {
