@@ -1,6 +1,6 @@
 import social from "./social.module.css";
-import sociallinks from "../../models/sociallinks";
-import icons from "./icons";
+import sociallinks from "./sociallinks";
+import icons from "../../models/icons";
 
 const Social: React.FC = () => {
   return (

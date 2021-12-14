@@ -1,0 +1,10 @@
+.modal {
+  background: var(--bg0);
+  width: 70vw;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

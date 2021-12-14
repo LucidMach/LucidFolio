@@ -4,7 +4,7 @@ import projects from "../models/projects";
 import NavBar from "../components/NavBar/NavBar";
 import Social from "../components/Social/Social";
 import BTN from "../components/BTN/BTN";
-import icons from "../components/Social/icons";
+import icons from "../models/icons";
 import Image from "next/image";
 import FileSaver from "file-saver";
 import { useEffect, useState } from "react";
@@ -13,7 +13,7 @@ const Work = () => {
   const [active, setActive] = useState("UI");
   const [w, setW] = useState(600);
 
-  // For Conditional Rendering SocialMedia Links on Work Page
+  // fetching window width
   useEffect(() => {
     const interval = setInterval(() => {
       if (window) {

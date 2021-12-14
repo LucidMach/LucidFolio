@@ -19,9 +19,17 @@
 .btn {
   width: 70vw;
   background: var(--ac0);
-  padding: 0.5rem;
+  padding: 0.25rem;
   text-align: center;
   color: var(--bg1);
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border: none;
+}
+.btn:hover {
+  box-shadow: 0 0 0.5rem var(--ac3);
+  outline: 0.1rem solid var(--bg0);
+}
+.btn:active {
+  box-shadow: none;
 }

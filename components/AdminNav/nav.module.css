@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  left: 2rem;
+}
+.longLine {
+  margin-bottom: 1.2rem;
+  border-left: 2px solid var(--ac1);
+  height: 100px;
+}
+
+.shortLine {
+  margin-top: 1.2rem;
+  border-left: 2px solid var(--ac1);
+  height: 25px;
+}
+.lnk {
+  margin: 0.75rem 0;
+  cursor: pointer;
+  color: var(--ac3);
+}
+.lnk:hover {
+  color: var(--ac0);
+}
