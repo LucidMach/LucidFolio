@@ -1,10 +1,10 @@
-import Selection from "../components/Selection";
+import Selection from "../components/Selection/Selection";
 import work from "../styles/work.module.css";
 import projects from "../models/projects";
-import NavBar from "../components/NavBar";
-import Social from "../components/Social";
-import BTN from "../components/BTN";
-import icons from "../models/icons";
+import NavBar from "../components/NavBar/NavBar";
+import Social from "../components/Social/Social";
+import BTN from "../components/BTN/BTN";
+import icons from "../components/Social/icons";
 import Image from "next/image";
 import FileSaver from "file-saver";
 import { useEffect, useState } from "react";

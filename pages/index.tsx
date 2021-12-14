@@ -1,7 +1,7 @@
 import Link from "next/link";
-import BTN from "../components/BTN";
-import Social from "../components/Social";
-import NavBar from "../components/NavBar";
+import BTN from "../components/BTN/BTN";
+import Social from "../components/Social/Social";
+import NavBar from "../components/NavBar/NavBar";
 import home from "../styles/home.module.css";
 import { useEffect, useState } from "react";
 

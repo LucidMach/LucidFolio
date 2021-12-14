@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import navbar from "../styles/navbar.module.css";
+import navbar from "./navbar.module.css";
 
 interface Props {
   children: React.ReactNode;

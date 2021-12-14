@@ -1,4 +1,4 @@
-import social from "../styles/social.module.css";
+import social from "./social.module.css";
 
 const icons = {
   twitter: (

@@ -2,9 +2,9 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import dashboard from "../styles/dashboard.module.css";
 import Image from "next/dist/client/image";
 import Link from "next/dist/client/link";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/NavBar/NavBar";
 import Editor from "@monaco-editor/react";
-import BTN from "../components/BTN";
+import BTN from "../components/BTN/BTN";
 import { auth } from "../firebase";
 import router from "next/router";
 

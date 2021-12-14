@@ -1,4 +1,4 @@
-import btn from "../styles/btn.module.css";
+import btn from "./btn.module.css";
 
 interface Props {
   children: React.ReactNode;

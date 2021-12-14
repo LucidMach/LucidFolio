@@ -1,6 +1,6 @@
 import Router from "next/router";
 import { SetStateAction, useEffect, useRef } from "react";
-import selection from "../styles/selection.module.css";
+import selection from "./selection.module.css";
 
 interface Props {
   options: string[];
