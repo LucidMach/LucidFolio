@@ -7,9 +7,19 @@ import BTN from "../components/BTN/BTN";
 import icons from "../models/icons";
 import Image from "next/image";
 import FileSaver from "file-saver";
-import { useEffect, useState } from "react";
 
-const Work = () => {
+import { useEffect, useState } from "react";
+import { GetStaticProps } from "next";
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  return {
+    props: {
+      projects: projects,
+    },
+  };
+};
+
+const Work = ({ projects }) => {
   const [active, setActive] = useState("UI");
   const [w, setW] = useState(600);
 

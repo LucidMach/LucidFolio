@@ -76,7 +76,7 @@ const projects: Projects[] = [
     ],
     desc: "A tool that enables designers to get wireframe sizes of initial device for better RWD",
     pic: "/assets/viewport-sizes.png",
-    stack: ["nextjs", "typescript"],
+    stack: ["react", "typescript"],
   },
   {
     title: "L",
@@ -214,21 +214,6 @@ const projects: Projects[] = [
       },
     ],
     pic: "/assets/cheese.png",
-    roles: ["3D Modeler"],
-    stack: ["blender"],
-    type: "renders",
-  },
-  {
-    title: "Monkee",
-    date: "Oct, 2021",
-    desc: "Jade Mokeny Head [SubSurface Rendering]",
-    links: [
-      {
-        icon: "download",
-        link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/monkee.png",
-      },
-    ],
-    pic: "/assets/monkee.png",
     roles: ["3D Modeler"],
     stack: ["blender"],
     type: "renders",
