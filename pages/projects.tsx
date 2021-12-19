@@ -1,6 +1,5 @@
 import Selection from "../components/Selection/Selection";
 import work from "../styles/work.module.css";
-import projects from "../models/projects";
 import NavBar from "../components/NavBar/NavBar";
 import Social from "../components/Social/Social";
 import BTN from "../components/BTN/BTN";
@@ -12,13 +11,14 @@ import FileSaver from "file-saver";
 import { useEffect, useState } from "react";
 import { GetStaticProps } from "next";
 
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 
 const fireStorageURL = (folder: "projects" | "stack", file: string): string =>
   `https://firebasestorage.googleapis.com/v0/b/lucidfolio-c4f29.appspot.com/o/${folder}%2F${file}.png?alt=media`;
 
 export const getStaticProps: GetStaticProps = async () => {
+  /* uncomment only to backup the data */
   // projects.forEach(async (project) => {
   //   try {
   //     const docRef = await addDoc(collection(db, "projects"), project);
@@ -27,6 +27,12 @@ export const getStaticProps: GetStaticProps = async () => {
   //     console.error("Error adding document: ", e);
   //   }
   // });
+
+  let projects = [];
+  const snapshot = await getDocs(collection(db, "projects"));
+  snapshot.forEach((doc) => {
+    projects.push(doc.data());
+  });
 
   return {
     props: {
