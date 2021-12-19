@@ -12,6 +12,9 @@ interface Projects {
   stack: string[];
 }
 
+const fireStorageURL = (folder: "projects" | "stack", file: string): string =>
+  `https://firebasestorage.googleapis.com/v0/b/lucidfolio-c4f29.appspot.com/o/${folder}%2F${file}.png?alt=media`;
+
 const projects: Projects[] = [
   {
     title: "VOIT",
@@ -23,7 +26,7 @@ const projects: Projects[] = [
       { icon: "open", link: "https://voit.herokuapp.com/mic" },
     ],
     desc: "WebUI template for Voice Controlled IoT Applications",
-    pic: "/assets/VOIT.png",
+    pic: fireStorageURL("projects", "VOIT"),
     stack: ["node"],
   },
   {
@@ -36,7 +39,7 @@ const projects: Projects[] = [
       { icon: "open", link: "https://color-filter.netlify.app" },
     ],
     desc: "An Image Color Channel Manipulation App",
-    pic: "/assets/colorfilter.png",
+    pic: fireStorageURL("projects", "colorfilter"),
     stack: ["numpy", "react", "node"],
   },
   {
@@ -49,7 +52,7 @@ const projects: Projects[] = [
       { icon: "open", link: "https://colorswatch.netlify.app/" },
     ],
     desc: "A Systematic Color Combination Generator",
-    pic: "/assets/colorswatch.png",
+    pic: fireStorageURL("projects", "colorswatch"),
     stack: ["react"],
   },
   {
@@ -62,7 +65,8 @@ const projects: Projects[] = [
       { icon: "open", link: "https://unsplashpro.netlify.app/" },
     ],
     desc: "An Easier to Embed/Download/Copy-Paste Images UI for UnSpash's API",
-    pic: "/assets/unsplashpro.png",
+    // pic: "/assets/unsplashpro.png",
+    pic: fireStorageURL("projects", "unsplashpro"),
     stack: ["react"],
   },
   {
@@ -75,7 +79,8 @@ const projects: Projects[] = [
       { icon: "open", link: "https://viewport-sizes.netlify.app/" },
     ],
     desc: "A tool that enables designers to get wireframe sizes of initial device for better RWD",
-    pic: "/assets/viewport-sizes.png",
+    // pic: "/assets/viewport-sizes.png",
+    pic: fireStorageURL("projects", "viewport-sizes"),
     stack: ["react", "typescript"],
   },
   {
@@ -94,7 +99,8 @@ const projects: Projects[] = [
       },
     ],
     desc: "Lew Lawiet from DeathNote",
-    pic: "/assets/L.png",
+    // pic: "/assets/L.png",
+    pic: fireStorageURL("projects", "L"),
     stack: ["figma"],
   },
   {
@@ -113,7 +119,8 @@ const projects: Projects[] = [
       },
     ],
     desc: "Finnaly a Wallpaper showing Itachi's Love for Konoha ",
-    pic: "/assets/itachi.png",
+    // pic: "/assets/itachi.png",
+    pic: fireStorageURL("projects", "itachi"),
     stack: ["figma"],
   },
   {
@@ -132,7 +139,8 @@ const projects: Projects[] = [
       },
     ],
     desc: "Zenitsu without his Fear",
-    pic: "/assets/zenitsu.png",
+    // pic: "/assets/zenitsu.png",
+    pic: fireStorageURL("projects", "zenitsu"),
     stack: ["figma"],
   },
   {
@@ -151,7 +159,8 @@ const projects: Projects[] = [
       },
     ],
     desc: "LightCycle AKA The Tron Bike ",
-    pic: "/assets/lightcycle-blue.png",
+    // pic: "/assets/lightcycle-blue.png",
+    pic: fireStorageURL("projects", "lightcycle-blue"),
     stack: ["figma"],
   },
   {
@@ -170,7 +179,8 @@ const projects: Projects[] = [
       },
     ],
     desc: "If Kenny and Levi fought on the Same Side",
-    pic: "/assets/kennyxlevi.png",
+    // pic: "/assets/kennyxlevi.png",
+    pic: fireStorageURL("projects", "kennyxlevi"),
     stack: ["figma"],
   },
   {
@@ -183,7 +193,8 @@ const projects: Projects[] = [
         link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/rocket.png",
       },
     ],
-    pic: "/assets/rocket.png",
+    // pic: "/assets/rocket.png",
+    pic: fireStorageURL("projects", "rocket"),
     roles: ["Concept Artist", "3D Modeler"],
     stack: ["blender"],
     type: "renders",
@@ -198,7 +209,8 @@ const projects: Projects[] = [
         link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/desktop.png",
       },
     ],
-    pic: "/assets/desktop.png",
+    // pic: "/assets/desktop.png",
+    pic: fireStorageURL("projects", "desktop"),
     roles: ["3D Modeler"],
     stack: ["blender"],
     type: "renders",
@@ -213,26 +225,27 @@ const projects: Projects[] = [
         link: "https://github.com/LucidMach/portfolio/tree/master/public/assets/cheese.png",
       },
     ],
-    pic: "/assets/cheese.png",
+    // pic: "/assets/cheese.png",
+    pic: fireStorageURL("projects", "cheese"),
     roles: ["3D Modeler"],
     stack: ["blender"],
     type: "renders",
   },
-  {
-    title: "LucidMach",
-    date: "Sept,2021",
-    roles: ["Logo Designer"],
-    type: "logo",
-    links: [
-      {
-        icon: "download",
-        link: "https://github.com/LucidMach/portfolio/tree/master/public/LoGo.png",
-      },
-    ],
-    desc: "The Logo on this Website",
-    pic: "/LoGo.png",
-    stack: ["figma"],
-  },
+  // {
+  //   title: "LucidMach",
+  //   date: "Sept,2021",
+  //   roles: ["Logo Designer"],
+  //   type: "logo",
+  //   links: [
+  //     {
+  //       icon: "download",
+  //       link: "https://github.com/LucidMach/portfolio/tree/master/public/LoGo.png",
+  //     },
+  //   ],
+  //   desc: "The Logo on this Website",
+  //   pic: "/LoGo.png",
+  //   stack: ["figma"],
+  // },
   {
     title: "Fayura",
     date: "Nov,2020",
@@ -245,7 +258,8 @@ const projects: Projects[] = [
       },
     ],
     desc: "An Invite-Only Team of Highy TechSavvy Individuals",
-    pic: "/assets/fayura.png",
+    // pic: "/assets/fayura.png",
+    pic: fireStorageURL("projects", "fayura"),
     stack: ["figma"],
   },
   {
@@ -260,7 +274,8 @@ const projects: Projects[] = [
       },
     ],
     desc: "A Book Sharing based Dating App",
-    pic: "/assets/libvion.png",
+    // pic: "/assets/libvion.png",
+    pic: fireStorageURL("projects", "libvion"),
     stack: ["figma"],
   },
   {
@@ -275,7 +290,8 @@ const projects: Projects[] = [
       },
     ],
     desc: "A Headphon Holder that clips on to a cupboard/closet",
-    pic: "/assets/headphoneholder.png",
+    // pic: "/assets/headphoneholder.png",
+    pic: fireStorageURL("projects", "headphoneholder"),
     stack: ["fusion360"],
   },
   {
@@ -290,7 +306,8 @@ const projects: Projects[] = [
       },
     ],
     desc: "An Ultra Minimalistic Tool Holder for Ender 3 Series 3D Printers",
-    pic: "/assets/toolholder.png",
+    // pic: "/assets/toolholder.png",
+    pic: fireStorageURL("projects", "toolholder"),
     stack: ["fusion360"],
   },
   {
@@ -305,7 +322,8 @@ const projects: Projects[] = [
       },
     ],
     desc: "An Ultra Minimalistic Physical Cover to Block Web Cam Access for PRIVACY REASONS",
-    pic: "/assets/dewebcam.png",
+    // pic: "/assets/dewebcam.png",
+    pic: fireStorageURL("projects", "dewebcam"),
     stack: ["fusion360"],
   },
 ];

@@ -4,14 +4,30 @@ import projects from "../models/projects";
 import NavBar from "../components/NavBar/NavBar";
 import Social from "../components/Social/Social";
 import BTN from "../components/BTN/BTN";
-import icons from "../models/icons";
+import icons from "../components/icons";
+
 import Image from "next/image";
 import FileSaver from "file-saver";
 
 import { useEffect, useState } from "react";
 import { GetStaticProps } from "next";
 
-export const getStaticProps: GetStaticProps = async (context) => {
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebase";
+
+const fireStorageURL = (folder: "projects" | "stack", file: string): string =>
+  `https://firebasestorage.googleapis.com/v0/b/lucidfolio-c4f29.appspot.com/o/${folder}%2F${file}.png?alt=media`;
+
+export const getStaticProps: GetStaticProps = async () => {
+  // projects.forEach(async (project) => {
+  //   try {
+  //     const docRef = await addDoc(collection(db, "projects"), project);
+  //     console.log("Document written with ID: ", docRef.id);
+  //   } catch (e) {
+  //     console.error("Error adding document: ", e);
+  //   }
+  // });
+
   return {
     props: {
       projects: projects,
@@ -134,7 +150,7 @@ const Work = ({ projects }) => {
                     return (
                       <div className={work.tool} key={element}>
                         <Image
-                          src={`/assets/stack/${element}.png`}
+                          src={fireStorageURL("stack", element)}
                           alt={element}
                           width={w > 600 ? "36px" : "30px"}
                           height={w > 600 ? "36px" : "30px"}
