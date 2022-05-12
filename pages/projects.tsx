@@ -38,6 +38,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       projects: projects,
     },
+    revalidate: 86400, // no of secs in a day
   };
 };
 
