@@ -25,9 +25,6 @@
   margin: 1.2rem;
 }
 @media screen and (max-width: 600px) {
-  .container {
-    bottom: 4rem;
-  }
   .title {
     font-size: 5rem;
   }

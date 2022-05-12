@@ -5,6 +5,7 @@ import Social from "../components/Social/Social";
 import BTN from "../components/BTN/BTN";
 import icons from "../components/icons";
 
+import Head from "next/head";
 import Image from "next/image";
 import FileSaver from "file-saver";
 
@@ -69,6 +70,10 @@ const Work = ({ projects }) => {
 
   return (
     <div className={work.content}>
+      <Head>
+        <title>LucidFolio | Projects</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <NavBar>
         <BTN>
           <a href="https://dev.to/Lucidmach/" target="_">

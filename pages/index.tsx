@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import BTN from "../components/BTN/BTN";
 import Social from "../components/Social/Social";
 import NavBar from "../components/NavBar/NavBar";
@@ -19,6 +20,10 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>LucidFolio | Home</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <NavBar>
         <BTN>
           <Link href={{ pathname: "/projects", query: { type: "UI" } }}>

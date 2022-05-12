@@ -15,6 +15,11 @@ const sociallinks: SocialLinks[] = [
     href: "https://www.instagram.com/lucidmach",
     icon: "insta",
   },
+  {
+    index: 2,
+    href: "mailto:lucidmach@gmail.com",
+    icon: "gmail",
+  },
 ];
 
 export default sociallinks;
