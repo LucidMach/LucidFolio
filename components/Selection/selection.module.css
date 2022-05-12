@@ -63,6 +63,10 @@
     min-width: 250px;
     overflow: scroll;
   }
+  .options::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
   .btn {
     background-color: var(--ac0);
     border: 2px solid var(--bg0);
