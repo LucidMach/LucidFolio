@@ -41,7 +41,7 @@ const Home = () => {
             </Link>
           </BTN>
           <BTN>
-            <a href="https://dev.to/Lucidmach/" target="_">
+            <a href="https://ziro2mach.com/blog" target="_">
               lucid blog
             </a>
           </BTN>
