@@ -76,7 +76,7 @@ const Work = ({ projects }) => {
       </Head>
       <NavBar>
         <BTN>
-          <a href="https://ziro2mach.com/" target="_">
+          <a href="https://lucidmach.com/" target="_">
             blog
           </a>
         </BTN>
